@@ -5,9 +5,9 @@ class MyStack {
     }
     
     public void push(int x) {
-        int s = queue.size();
         queue.add(x);
-        for(int i = 0; i < s; i++){
+        int s = queue.size();
+        for(int i = 1; i < s; i++){
             queue.add(queue.remove());
         }
         
